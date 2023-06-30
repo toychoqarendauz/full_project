@@ -1,0 +1,98 @@
+<!-- Landing Page -->
+
+{% extends 'base.html' %} {% block title %} TaUz {% endblock %} {% load static %}
+{% block content %} {% include 'includes/lnading-page-header.html' %}
+
+<!-- Main Container Start -->
+<div class="container-fluid main-container">
+	<!-- Hero Section Start -->
+	<div class="hero-section">
+		<div>
+			<p>Find, Book and Rent Cars in Fast and Easy Steps</p>
+			<p>Providing cheap, comfortable and safe car rental services and facilities.</p>
+		</div>
+	</div>
+	<!-- Hero Section End -->
+
+	<!-- Car Brands Start -->
+	<div class="car-brands">
+		<div class="slider">
+			<div class="slide-track">
+				<div class="slide"><img src="{% static 'pages/img/car-logos/car-logo-1.png' %}" alt="car-brand"></div>
+				<div class="slide"><img src="{% static 'pages/img/car-logos/car-logo-2.png' %}" alt="car-brand"></div>
+				<div class="slide"><img src="{% static 'pages/img/car-logos/car-logo-3.png' %}" alt="car-brand"></div>
+				<div class="slide"><img src="{% static 'pages/img/car-logos/car-logo-4.png' %}" alt="car-brand"></div>
+				<div class="slide"><img src="{% static 'pages/img/car-logos/car-logo-5.png' %}" alt="car-brand"></div>
+				<div class="slide"><img src="{% static 'pages/img/car-logos/car-logo-6.png' %}" alt="car-brand"></div>
+				<div class="slide"><img src="{% static 'pages/img/car-logos/car-logo-7.png' %}" alt="car-brand"></div>
+				<div class="slide"><img src="{% static 'pages/img/car-logos/car-logo-8.png' %}" alt="car-brand"></div>
+				<div class="slide"><img src="{% static 'pages/img/car-logos/car-logo-9.png' %}" alt="car-brand"></div>
+				<div class="slide"><img src="{% static 'pages/img/car-logos/car-logo-10.png' %}" alt="car-brand"></div>
+				<div class="slide"><img src="{% static 'pages/img/car-logos/car-logo-11.png' %}" alt="car-brand"></div>
+				<div class="slide"><img src="{% static 'pages/img/car-logos/car-logo-12.png' %}" alt="car-brand"></div>
+				<div class="slide"><img src="{% static 'pages/img/car-logos/car-logo-13.png' %}" alt="car-brand"></div>
+				<div class="slide"><img src="{% static 'pages/img/car-logos/car-logo-1.png' %}" alt="car-brand"></div>
+				<div class="slide"><img src="{% static 'pages/img/car-logos/car-logo-2.png' %}" alt="car-brand"></div>
+				<div class="slide"><img src="{% static 'pages/img/car-logos/car-logo-3.png' %}" alt="car-brand"></div>
+				<div class="slide"><img src="{% static 'pages/img/car-logos/car-logo-4.png' %}" alt="car-brand"></div>
+				<div class="slide"><img src="{% static 'pages/img/car-logos/car-logo-5.png' %}" alt="car-brand"></div>
+				<div class="slide"><img src="{% static 'pages/img/car-logos/car-logo-6.png' %}" alt="car-brand"></div>
+				<div class="slide"><img src="{% static 'pages/img/car-logos/car-logo-7.png' %}" alt="car-brand"></div>
+				<div class="slide"><img src="{% static 'pages/img/car-logos/car-logo-8.png' %}" alt="car-brand"></div>
+				<div class="slide"><img src="{% static 'pages/img/car-logos/car-logo-9.png' %}" alt="car-brand"></div>
+				<div class="slide"><img src="{% static 'pages/img/car-logos/car-logo-10.png' %}" alt="car-brand"></div>
+				<div class="slide"><img src="{% static 'pages/img/car-logos/car-logo-11.png' %}" alt="car-brand"></div>
+				<div class="slide"><img src="{% static 'pages/img/car-logos/car-logo-12.png' %}" alt="car-brand"></div>
+				<div class="slide"><img src="{% static 'pages/img/car-logos/car-logo-13.png' %}" alt="car-brand"></div>
+			</div>
+		</div>
+	</div>
+	<!-- Car Brands End -->
+
+	<!-- Recommendation Start -->
+	<div class="recommendation" id="recommendation-section">
+		{% include 'includes/recommendation.html' %}
+	</div>
+	<!-- Recommendation End -->
+
+	<!-- How-it-works Start -->
+	<div class="how-it-works" id="how-it-works-section">
+		<div class="top-section">
+			<p>HOW TO RENT CAR?</p>
+			<p>Rent by following 3 simple steps</p>
+		</div>
+		<div class="bottom-section">
+			<div class="inner-card">
+				<div class="image-wrapper">
+					<img src="{% static 'pages/img/how-it-works/location.png' %}" alt="image">
+				</div>
+				<div class="label">
+					<p>Choose Location</p>
+					<p>Choose your location and discover best cars for you</p>
+				</div>
+			</div>
+			<div class="inner-card">
+				<div class="image-wrapper">
+					<img src="{% static 'pages/img/how-it-works/date.png' %}" alt="image">
+				</div>
+				<div class="label">
+					<p>Pick-Up Date</p>
+					<p>Select your pick-up date and time to book your car</p>
+				</div>
+			</div>
+			<div class="inner-card">
+				<div class="image-wrapper">
+					<img src="{% static 'pages/img/how-it-works/car.png' %}" alt="image">
+				</div>
+				<div class="label">
+					<p>Book Your Car</p>
+					<p>Book your car and reach your destination</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- How-it-works End -->
+</div>
+<!-- Main Container End -->
+
+{% include 'includes/landing-page-footer.html' %} {% endblock %}

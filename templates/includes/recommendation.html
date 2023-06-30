@@ -1,0 +1,22 @@
+{% load static %}
+
+{% for car in cars %}
+	<div class="rec-wrapper">
+		<div class="car-name">
+			<p>{{ car.name }}</p>
+		</div>
+		<div class="rec-image-wrapper">
+			<img src="{{ car.image.url }}" alt="car">
+		</div>
+		<div class="details-wrapper">
+			<div class="details-wrapper-top">
+				<p>{{ car.transmition }}</p>
+				<p>{{ car.price }}</p>
+			</div>
+			<div class="details-wrapper-bottom">
+				<p>{{ car.description }}</p>
+			</div>
+		</div>	
+	</div>
+	
+{% endfor %}

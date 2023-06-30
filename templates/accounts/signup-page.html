@@ -1,0 +1,41 @@
+<!-- Signup Page -->
+
+{% extends 'base.html' %} {% block title %} TaUz {% endblock %} {% load static %}
+{% block content %}
+
+<div class="signup-form-wrapper">
+	<div class="form-title-wrapper">
+		<p id="form-title">Register Account</p>
+	</div>
+	<div class="form-inputs-wrapper">
+		<div class="field-errors">
+			{% if form.errors %}
+				{% for field in form %}
+					{% for error in field.errors %}
+						<div class="alert alert-danger alert-message">
+							{{ error|escape }}
+						</div>
+					{% endfor %}
+				{% endfor %}
+			{% endif %}
+		</div>
+		<form method="POST" action="">
+			{% csrf_token %}
+			<div class="input-fields">{{ form.username }}</div>
+			<div class="input-fields">{{ form.email }}</div>
+			<div class="input-fields">{{ form.password1 }}</div>
+			<div class="input-fields">{{ form.password2 }}</div>
+
+	   		<div class="submit-button-wrapper">
+	 			<input class="submit-button" type="submit" value="Submit">
+	   		</div>
+		</form>
+	</div>
+	<div class="links-wrapper">
+		<div class="links">
+			Already have an account? <a href="{% url 'login_page' %}" class="">Login</a>
+		</div>
+	</div>
+</div>
+
+{% endblock %}

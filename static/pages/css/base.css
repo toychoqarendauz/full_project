@@ -1,0 +1,68 @@
+/* Custom Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Diphylleia&display=swap');
+
+/* CSS Files */
+@import url('home-page.css');
+@import url('landing-page.css');
+@import url('landing-page-header.css');
+@import url('landing-page-footer.css');
+@import url('recommendation.css');
+@import url('login-page.css');
+@import url('signup-page.css');
+
+/* Custom Colors */
+:root {
+	--primary-color: #3083FF;
+	--background-color: #EDF1FF;
+	
+	--text-color-dark: #020A18;
+	--text-color-light: #FBF6F6;
+
+	--scrollbar-track-color: transparent;
+	--scrollbar-thumb-color: #3083FF;
+	--scrollbar-thumb-hover-color: #76ADFF;
+}
+
+/* General Settings */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+}
+body {
+	min-height: 100vh;
+	background-color: var(--background-color) !important;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+html {
+	scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+	width: 6px;
+}
+::-webkit-scrollbar-track {
+	background: var(--scrollbar-track-color);
+}
+::-webkit-scrollbar-thumb {
+	background: var(--scrollbar-thumb-color);
+}
+::-webkit-scrollbar-thumb:hover {
+	background: var(--scrollbar-thumb-hover-color);
+}
+
+/* Main Container */
+.main-container {
+	padding: 0 160px !important;
+}
+@media (max-width: 1400px) {
+	.main-container {
+		padding: 0 20px !important;
+	}
+}

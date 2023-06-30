@@ -1,0 +1,43 @@
+{% load static %}
+
+<!-- HEADER START -->
+
+<div class="header-wrapper">
+	<header>
+		<div class="hamburger">
+			<div class="hamburger-wrapper">
+				<div>
+					<div class="line"></div>
+					<div class="line"></div>
+					<div class="line"></div>
+				</div>
+			</div>
+		</div>
+		<div class="logo-wrapper">
+			<a href="">
+				<img src="{% static 'pages/img/logo-dark.png' %}" class="header-logo" alt="Logo">
+			</a>
+		</div>
+		<nav class="nav-bar">
+			<ul>
+				<li><a href="" class="active">Home</a></li>
+				<li><a href="#recommendation-section">Find car</a></li>
+				<li><a href="{% url 'rent_car' %}">Become renter</a></li>
+				<li><a href="#how-it-works-section">How it works</a></li>
+				<li><a href="#footer-section">Contacts</a></li>
+			</ul>
+		</nav>
+		<div class="login-wrapper">
+			<span class="username-wrapper">{{ request.user }}</span>
+			<a href="{% url 'login_page' %}">
+				<button type="button" class="user-login">Logout</button>
+			</a>
+			 <a href="{% url 'logout' %}">
+				<button type="button" class="user-login-simple"><ion-icon name="log-out"></ion-icon></button>
+			</a>
+		</div>
+	</header>
+</div>
+
+
+<!-- HEADER END -->

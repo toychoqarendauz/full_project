@@ -1,0 +1,60 @@
+/* Signup Page */
+
+
+.signup-form-wrapper {
+	width: 300px;
+}
+.form-title-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 6px 20px;
+}
+#form-title {
+	color: var(--text-color-dark);
+	font-weight: 400;
+	font-size: 20px;
+	margin-bottom: 0;
+}
+.form-inputs-wrapper {
+	padding: 10px;
+}
+.links-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 6px 20px;
+}
+.links-wrapper .links {
+	color: var(--text-color-dark);
+	font-size: 16px;
+	font-weight: 400;
+}
+.links-wrapper .links a {
+	text-decoration: none;
+	color: var(--primary-color);
+}
+.input-fields {
+	height: 48px;
+	margin-bottom: 10px;
+}
+.input-fields .form-control {
+	height: 100%;
+	border-radius: 10px;
+	border: 2px solid var(--primary-color);
+	color: var(--text-color-dark);
+}
+.submit-button-wrapper {
+	height: 48px;
+}
+.submit-button-wrapper .submit-button {
+	height:	100%;
+	width: 100%;
+	border: none;
+	border-radius: 10px;
+	background-color: var(--primary-color);
+	color: var(--text-color-light);
+}
+.alert-message {
+	padding: 6px !important;
+}

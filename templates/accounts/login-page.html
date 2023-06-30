@@ -1,0 +1,42 @@
+<!-- Login Page -->
+
+{% extends 'base.html' %} {% block title %} TaUz {% endblock %} {% load static %}
+{% block content %}
+
+<div class="login-form-wrapper">
+	<div class="form-title-wrapper">
+		<p id="form-title">Login</p>
+	</div>
+	<div class="form-inputs-wrapper">
+		
+		<div class="field-errors">
+			{% for message in messages %}
+				<div class="alert alert-warning alert-message">
+					{{ message }}
+				</div>
+			{% endfor %}
+		</div>
+		
+		<form method="POST" action="">
+			{% csrf_token %}
+			<div class="input-fields">
+				<input type="text" name="username" placeholder="Username" class="form-input-username">
+			</div>
+			<div class="input-fields">
+				<input type="password" name="password" placeholder="Password" class="form-input-password">
+			</div>
+
+	   		<div class="submit-button-wrapper">
+	 			<input class="submit-button" type="submit" value="Submit">
+	   		</div>
+		</form>
+	</div>
+	<div class="links-wrapper">
+		<div class="links">
+			Don't have an account? <a href="{% url 'signup_page' %}" class="ml-2">Sign Up</a>
+		</div>
+	</div>
+</div>
+
+
+{% endblock %}
